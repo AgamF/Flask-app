@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Welcome to my Flask app!</h1>
+    <h1>What's your name?</h1>
+    <div>
+        <form action="/register" method="post">
+            <input id="namefield" name="name" autofocus autocomplete="off" placeholder="Name">
+            <input type="submit">
+        </form>
+    </div>
+
+    <script>
+        let name = document.getElementById("namefield");
+        
+    </script>
+
+{% endblock %}

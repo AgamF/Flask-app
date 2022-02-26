@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Hey {{ name }}!</h1>
+    <form action="/deregister" method="post">
+        <button type="submit">Delete User</button>
+    </form>
+
+{% endblock %}
